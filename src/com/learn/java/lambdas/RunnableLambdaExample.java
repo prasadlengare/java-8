@@ -13,9 +13,7 @@ public class RunnableLambdaExample {
         Runnable after java 8
         */
         //Method 1
-        Runnable runnable1 = ()->{
-            System.out.println("Runnable 1");
-        };
+        Runnable runnable1 = ()-> System.out.println("Runnable 1");
         new Thread(runnable1).start();
 
         //Method 2
