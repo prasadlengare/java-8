@@ -6,12 +6,7 @@ public class RunnableLambdaExample {
         /*
         Runnable before java 8
         */
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Runnable ");
-            }
-        };
+        Runnable runnable = () -> System.out.println("Runnable ");
         new Thread(runnable).start();
 
         /*
